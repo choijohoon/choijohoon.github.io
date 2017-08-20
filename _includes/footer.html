@@ -1,5 +1,13 @@
-<footer class="site-footer">
+<div id="menu">
+      {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+    </div>
 
+
+<footer class="site-footer">
   <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title }}</h2>
