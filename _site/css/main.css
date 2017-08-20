@@ -259,7 +259,7 @@ body, p {
   background: #fff;
   width: auto;
   height: auto;
-  padding: 3rem;
+  padding: 2.5rem;
   display: inline-block;
   float: left;
   position: relative;
@@ -282,7 +282,7 @@ body, p {
   float: right;
   margin-left: 1rem;
   font-size: 13.5px;
-  font-weight: 600l; }
+  font-weight: 600; }
 
 .imgimg {
   position: absolute;
