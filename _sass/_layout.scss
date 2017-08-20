@@ -16,7 +16,6 @@
 
 .ml-en, .ml-num {
     font-family: "matrix-ii";
-    letter-spacing: 1px;
 }
 
 body, p {
@@ -48,6 +47,11 @@ body, p {
     right: 0;  
 }
 
+.sml{
+    font-size: $small-font-size;
+    font-weight: 600 !important;
+}
+
 .site-header {
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -58,9 +62,25 @@ body, p {
     position: fixed;
     top: 1rem;
     left: 3rem;
-    width: 6rem;
+    width: 5.75rem;
     height: auto;
     z-index: 100;
+}
+
+.address{
+    position: absolute;
+    left: 10rem;
+    top: 1rem;
+    z-index:100;
+    font-weight: 300;
+
+}
+.info{
+    position: absolute;
+    left: 3rem;
+    top: 2.5rem;
+    z-index:100;
+    font-weight: 300;
 }
 
 .site-nav {
@@ -149,8 +169,9 @@ body, p {
 
 .sns{
     position: absolute;
-    top: 1.25rem;
+    top: 1rem;
     right: 3rem;
+    z-index: 100;
 }
 
 .sns a{
@@ -159,7 +180,16 @@ body, p {
     float: right;
     margin-left: 1rem;
     font-size: $small-font-size;
-    letter-spacing: -1px;
+}
+
+.imgimg {
+        position: absolute;
+
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    width:auto;
+    height:auto;
 }
 
 .site-footer {

@@ -151,8 +151,7 @@ pre {
   word-break: keep-all; }
 
 .ml-en, .ml-num {
-  font-family: "matrix-ii";
-  letter-spacing: 1px; }
+  font-family: "matrix-ii"; }
 
 body, p {
   font-family: "arita-buri";
@@ -178,6 +177,10 @@ body, p {
   left: 0;
   right: 0; }
 
+.sml {
+  font-size: 13.5px;
+  font-weight: 600 !important; }
+
 .site-header {
   position: relative; }
 
@@ -186,9 +189,23 @@ body, p {
   position: fixed;
   top: 1rem;
   left: 3rem;
-  width: 6rem;
+  width: 5.75rem;
   height: auto;
   z-index: 100; }
+
+.address {
+  position: absolute;
+  left: 10rem;
+  top: 1rem;
+  z-index: 100;
+  font-weight: 300; }
+
+.info {
+  position: absolute;
+  left: 3rem;
+  top: 2.5rem;
+  z-index: 100;
+  font-weight: 300; }
 
 .site-nav {
   float: right;
@@ -254,16 +271,24 @@ body, p {
 
 .sns {
   position: absolute;
-  top: 1.25rem;
-  right: 3rem; }
+  top: 1rem;
+  right: 3rem;
+  z-index: 100; }
 
 .sns a {
   position: relative;
   display: inline-block;
   float: right;
   margin-left: 1rem;
-  font-size: 13.5px;
-  letter-spacing: -1px; }
+  font-size: 13.5px; }
+
+.imgimg {
+  position: absolute;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  width: auto;
+  height: auto; }
 
 .site-footer {
   border-top: 1px solid #e8e8e8;
