@@ -151,7 +151,8 @@ pre {
   word-break: keep-all; }
 
 .ml-en, .ml-num {
-  font-family: "matrix-ii"; }
+  font-family: "matrix-ii";
+  letter-spacing: 0.25px; }
 
 body, p {
   font-family: "arita-buri";
