@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".draggable").draggable();
+    $('.draggable').draggable();
     $('.draggable').each(function(i,el){
     var this_w = $(this).width();
     var this_h = $(this).height();

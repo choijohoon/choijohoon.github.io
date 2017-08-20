@@ -14,12 +14,7 @@ body {
   font: 400 18px/1 "Arita-buri", Helvetica sans-serif;
   color: #111;
   background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  -webkit-text-size-adjust: 100%; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -66,13 +61,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #000;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #000; }
   a:hover {
     color: #111;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 /**
  * Blockquotes
@@ -149,9 +144,20 @@ pre {
   src: url("arita-burisb.woff2") format("woff2"), url("arita-burisb.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+*, html, body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  word-break: keep-all; }
+
 .ml-en, .ml-num {
   font-family: "matrix-ii";
   letter-spacing: 1px; }
+
+body, p {
+  font-family: "arita-buri";
+  font-size: 1rem;
+  line-height: 1.75rem; }
 
 /**
  * Site header
@@ -223,11 +229,11 @@ pre {
  */
 #menu {
   position: absolute;
-  width: 75vw;
+  width: 60vw;
   height: auto;
   bottom: 2rem;
   left: 3rem;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 0; }
 
 .page-link {
@@ -239,7 +245,25 @@ pre {
   display: inline-block;
   float: left;
   position: relative;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  margin-top: 1rem; }
+
+.page-link:hover {
+  top: -2px;
+  left: -2px; }
+
+.sns {
+  position: absolute;
+  top: 1.25rem;
+  right: 3rem; }
+
+.sns a {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-left: 1rem;
+  font-size: 13.5px;
+  letter-spacing: -1px; }
 
 .site-footer {
   border-top: 1px solid #e8e8e8;

@@ -6,10 +6,25 @@
         font-style: normal;
 }
 
+*, html, body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+	word-break:keep-all;
+}
+
+
 .ml-en, .ml-num {
     font-family: "matrix-ii";
     letter-spacing: 1px;
 }
+
+body, p {
+    font-family: "arita-buri";
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
 
 /**
  * Site header
@@ -105,12 +120,12 @@
 
 #menu{
     position: absolute;
-    width: 75vw;
+    width: 60vw;
     height: auto;
     bottom: 2rem;
     left: 3rem;
 
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 0;
 }
 
@@ -124,6 +139,27 @@
     float: left;
     position: relative;
     margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.page-link:hover{
+    top: -2px;
+        left: -2px;
+}
+
+.sns{
+    position: absolute;
+    top: 1.25rem;
+    right: 3rem;
+}
+
+.sns a{
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-left: 1rem;
+    font-size: $small-font-size;
+    letter-spacing: -1px;
 }
 
 .site-footer {
