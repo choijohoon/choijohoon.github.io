@@ -2,7 +2,6 @@
         font-family: 'arita-buri';
         src: url('arita-burisb.woff2') format('woff2'),
         url('arita-burisb.woff') format('woff');
-        font-weight: normal;
         font-style: normal;
 }
 
@@ -48,11 +47,15 @@ body, p {
     right: 0;  
 }
 
+
 .sml{
     font-size: $small-font-size;
     font-weight: 600 !important;
 }
 
+.sml span{
+    font-weight: 600 !important;
+}
 .site-header {
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -66,6 +69,11 @@ body, p {
     width: 5.75rem;
     height: auto;
     z-index: 100;
+    
+    @include media-query($on-palm) {
+       left: 1rem;
+        top: 0.5rem;
+    }
 }
 
 .address{
@@ -73,15 +81,31 @@ body, p {
     left: 10rem;
     top: 1rem;
     z-index:100;
-    font-weight: 400;
-
+    font-weight: 300;
+    
+    @include media-query($on-palm) {
+            display: none;
+        }
+    
+    @include media-query($on-laptop) {
+            display: none;
+        }
 }
+
 .info{
     position: absolute;
     left: 3rem;
     top: 2.5rem;
     z-index:100;
-    font-weight: 4f00;
+    font-weight: 300;
+    
+    @include media-query($on-palm) {
+            display: none;
+        }
+    
+     @include media-query($on-laptop) {
+            display: none;
+        }
 }
 
 .site-nav {
@@ -122,15 +146,7 @@ body, p {
             }
         }
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
+        
     }
 
 
@@ -141,13 +157,23 @@ body, p {
 
 #menu{
     position: absolute;
-    width: 60vw;
+    width: 65vw;
     height: auto;
     bottom: 2rem;
     left: 3rem;
 
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 0;
+    letter-spacing: -1px;
+    
+    @include media-query($on-palm) {
+        font-size: 1.75rem;
+        width: calc(100vw - 2rem);
+        left: 1rem;
+        bottom: 1rem;
+    }
+    
+
 }
 
 .page-link {
@@ -161,11 +187,16 @@ body, p {
     position: relative;
     margin-right: 1rem;
     margin-top: 1rem;
+    
+    @include media-query($on-palm) {
+        padding: 1.75rem;
+        margin-top:0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 .page-link:hover{
-    top: -2px;
-        left: -2px;
+   box-shadow:2px 2px 4px #aaa;
 }
 
 .sns{
@@ -173,18 +204,24 @@ body, p {
     top: 1rem;
     right: 3rem;
     z-index: 100;
+    font-family: "matrix-ii-n4", "matrix-ii";
+    font-size: $small-font-size;
+    
+    @include media-query($on-palm) {
+        right: 1rem;
+        top: 0.5rem;
+    }
 }
 
 .sns a{
     position: relative;
     display: inline-block;
     float: right;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .imgimg {
-        position: absolute;
-
+    position: absolute;
     border-radius: 0;
     background-color: transparent;
     border: none;
@@ -335,3 +372,4 @@ body, p {
         }
     }
 }
+
