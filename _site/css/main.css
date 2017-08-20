@@ -199,14 +199,14 @@ body, p {
   left: 10rem;
   top: 1rem;
   z-index: 100;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .info {
   position: absolute;
   left: 3rem;
   top: 2.5rem;
   z-index: 100;
-  font-weight: 300; }
+  font-weight: 4f00; }
 
 .site-nav {
   float: right;
@@ -280,9 +280,7 @@ body, p {
   position: relative;
   display: inline-block;
   float: right;
-  margin-left: 1rem;
-  font-size: 13.5px;
-  font-weight: 600; }
+  margin-left: 1rem; }
 
 .imgimg {
   position: absolute;
