@@ -3,6 +3,6 @@ layout: default
 ---
 {% for image in site.static_files %}
     {% if image.path contains 'img/main' %}
-<div class="draggable imgimg"> <img src="{{ site.baseurl }}{{ image.path }}" alt="image" /> </div>
+<div class="draggable imgimg"> <img src="{{ site.baseurl }}{{ image.path }}" /> </div>
     {% endif %}
 {% endfor %}
