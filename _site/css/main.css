@@ -189,7 +189,7 @@ body, p {
   display: block;
   position: fixed;
   top: 1rem;
-  left: 3rem;
+  left: 2.8rem;
   width: 5.75rem;
   height: auto;
   z-index: 100; }
@@ -281,7 +281,8 @@ body, p {
   display: inline-block;
   float: right;
   margin-left: 1rem;
-  font-size: 13.5px; }
+  font-size: 13.5px;
+  font-weight: 600l; }
 
 .imgimg {
   position: absolute;
