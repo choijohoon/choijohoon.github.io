@@ -11,7 +11,7 @@ email: info@oneroom.pe.kr
 description: > # this means to ignore newlines until "baseurl:"
   주제별 국내외의 출판물을 소개하고, 미술・디자인작품, 의류, 인테리어 소품 및 잡화를 판매하고 있습니다. 동시에 상영회, 세미나, 그리고 소규모 모임을 진행합니다.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://oneroom.pe.kr" # the base hostname & protocol for your site
+url: "https://choijohoon.github.io/" # the base hostname & protocol for your site
 twitter_username: oneroom_twt
 github_username:  choijohoon
 

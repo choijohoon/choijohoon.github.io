@@ -341,40 +341,26 @@ body, p {
 /**
  * Posts
  */
+.col-1 {
+  width: calc(100vw - 6rem); }
+
 .post {
   display: block;
   background-color: #fff;
   border: 1px solid #000;
-  position: absolute; }
+  position: absolute;
+  top: 6rem;
+  left: 3rem; }
 
 .post-header {
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px solid #000;
+  margin: 1rem; }
 
 .post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1; }
-  @media screen and (max-width: 950px) {
-    .post-title {
-      font-size: 36px; } }
+  font-size: 1rem; }
 
 .post-content {
-  margin-bottom: 30px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 950px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 950px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 950px) {
-      .post-content h4 {
-        font-size: 18px; } }
+  padding: 1rem; }
 
 /**
  * Syntax highlighting styles
