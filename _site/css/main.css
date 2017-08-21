@@ -202,6 +202,10 @@ body, p {
     .site-title {
       left: 1rem;
       top: 0.5rem; } }
+  @media screen and (max-width: 950px) {
+    .site-title {
+      left: 1rem;
+      top: 0.5rem; } }
 
 .address {
   position: absolute;
@@ -229,33 +233,6 @@ body, p {
     .info {
       display: none; } }
 
-.site-nav {
-  float: right;
-  line-height: 56px; }
-  .site-nav .menu-icon {
-    display: none; }
-
-@media screen and (max-width: 768px) {
-  position: absolute;
-  top: 9px;
-  right: 15px;
-  background-color: #eee;
-  border: 1px solid #e8e8e8;
-  border-radius: 5px;
-  text-align: right;
-  .menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center; }
-    .menu-icon > svg {
-      width: 18px;
-      height: 15px; }
-      .menu-icon > svg path {
-        fill: #424242; } }
 /**
  * Site footer
  */
@@ -269,6 +246,12 @@ body, p {
   line-height: 0;
   letter-spacing: -1px; }
   @media screen and (max-width: 768px) {
+    #menu {
+      font-size: 1.75rem;
+      width: calc(100vw - 2rem);
+      left: 1rem;
+      bottom: 1rem; } }
+  @media screen and (max-width: 950px) {
     #menu {
       font-size: 1.75rem;
       width: calc(100vw - 2rem);
@@ -341,20 +324,49 @@ body, p {
 /**
  * Posts
  */
+.wrapper {
+  width: calc(100vw - 6rem);
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  padding: 0px !important; }
+
+[class^="col-"] {
+  float: left;
+  display: table;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .col-1 {
   width: calc(100vw - 6rem); }
 
+.col-2 {
+  --widthA: calc(100vw - 7rem);
+  --widthB: calc(var(--widthA) / 2);
+  width: var(--widthB); }
+
+.col-3 {
+  --widthC: calc(100vw - 8rem);
+  --widthD: calc(var(--widthC) / 3);
+  width: var(--widthD); }
+
 .post {
-  display: block;
+  display: inline-block;
   background-color: #fff;
   border: 1px solid #000;
-  position: absolute;
-  top: 6rem;
-  left: 3rem; }
+  position: relative;
+  margin-right: 1rem;
+  float: left; }
+  .post:last-child {
+    margin-right: 0%; }
 
 .post-header {
   border-bottom: 1px solid #000;
-  margin: 1rem; }
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
 
 .post-title {
   font-size: 1rem; }

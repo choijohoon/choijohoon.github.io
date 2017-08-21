@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<article class="post col-1">
+<div class="wrapper">
+<article class="post col-3">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
@@ -13,3 +14,17 @@ layout: default
   </div>
 
 </article>
+
+<article class="post col-2">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+      <div class="close"> </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+</div>
